@@ -2,16 +2,19 @@ title: Control Panel Items
 id: 0ba863e6-def5-4e50-9cea-4dd8c7dc46a4
 status: experimental
 description: Detects the malicious use of a control panel item
-reference:
+references:
     - https://attack.mitre.org/techniques/T1196/
     - https://ired.team/offensive-security/code-execution/code-execution-through-control-panel-add-ins
 tags:
     - attack.execution
-    - attack.t1196
     - attack.defense_evasion
-    - attack.t1218
+    - attack.t1218.002
+    - attack.t1196  # an old one
+    - attack.persistence
+    - attack.t1546
 author: Kyaw Min Thein, Furkan Caliskan (@caliskanfurkan_)
 date: 2020/06/22
+modified: 2020/08/29
 level: critical
 logsource:
     product: windows

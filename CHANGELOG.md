@@ -6,6 +6,67 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 from version 0.14.0.
 
+## 0.19.1 - 2021-02-28
+
+### Changed
+
+* Added LGPL license to distribution
+
+## 0.19 - 2021-02-23
+
+### Added
+
+* New parameters for Elastic backends
+* Various field mappings
+* FireEye Helix backend
+* Generic log source image_load
+* Kibana NDJSON backend
+* uberAgent ESA backend
+* SumoLogic CSE backend
+
+### Changed
+
+* Updated mdatp backend fields
+* QRadar query generation optimized
+* MDATP: case insensitive search
+
+### Fixed
+
+* Fixing Qradar implementation for create valid AQL queries
+* Nested conditions
+* Various minor bug fixes
+
+## 0.18.1 - 2020-08-25
+
+Release created for technical reasons (issues with extended README and PyPI), no real changes done.
+
+## 0.18.0 - 2020-08-25
+
+### Added
+
+* C# backend
+* STIX backend
+* Options to xpack-watcher backend (action_throttle_period, mail_from acaw, mail_profile and other)
+* More generic log sources
+* Windows Defender log sources
+* Generic DNS query log source
+* AppLocker log source
+
+### Changed
+
+* Improved backend and configuration descriptions
+* Microsoft Defender ATP mapping updated
+* Improved handling of wildcards in Elastic backends
+
+### Fixed
+
+* Powershell backend: key name was incorrectly added into regular expression
+* Grouping issue in Carbon Black backend
+* Handling of default field mapping in case field is referenced multiple from a rule
+* Code cleanup and various fixes
+* Log source mappings in configurations
+* Handling of conditional field mappings by Elastic backends
+
 ## 0.17.0 - 2020-06-12
 
 ### Added
